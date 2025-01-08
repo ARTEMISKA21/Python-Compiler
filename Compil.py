@@ -73,7 +73,7 @@ def build_executable(script_name, icon_name, windowed):
     if windowed:
         command.append('--windowed')
     
-    open_button['state'] = 'disabled'  # Отключаем кнопку
+    open_button['state'] = 'disabled'
     threading.Thread(target=run_command, args=(command,)).start()
 
 def run_command(command):
